@@ -35,13 +35,10 @@ class Header extends Component {
       <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
         <ul className="navbar-nav">
           <li className={"nav-item" + this.state.activeButton === 'active' ? "active": ""}>
-            <a onClick={()=>this.activeClass.bind(this, 'active')} className="nav-link"  href="#">Active</a>
+          <Link to="/" onClick={()=>this.activeClass.bind(this, 'active')} className="nav-link"  >Home</Link>
           </li>
-          <li className="nav-item">
+          <li className={"nav-item" + this.state.activeButton === 'viewList' ? "active": ""}>
             <Link to="/viewList" onClick={this.activeClass.bind(this, 'viewList')} className="nav-link" >View List</Link>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
       </nav>
