@@ -9,10 +9,6 @@ class Main extends Component {
     toggle: false,
   };
 
-  constructor(props) {
-    super(props);
-  };
-
   function = () => {
     this.setState({
       toggle: !this.state.toggle

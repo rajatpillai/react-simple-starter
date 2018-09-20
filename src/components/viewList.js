@@ -30,9 +30,9 @@ class ViewList extends Component {
     }
 
     renderItems = () => {
-       return this.state.array.map((item) => {
+       return this.state.array.map((item, index) => {
             console.log(item)
-            return (<img src={item} alt={`${item}'s picture`}  className="img-responsive" />);
+            return (<img key={index} src={item} alt={item}  className="img-responsive" />);
         });
     }
 
