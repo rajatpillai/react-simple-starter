@@ -39,11 +39,13 @@ class ViewList extends Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <input onChange={(event) => {this.setState({searchText: event.target.value})}} type="text"/>
-                    <button onClick={() => this.search()}>search</button>
+                <div className="row mx-0">
+                    <div className="col-12 search-barWrapper">
+                        <input onChange={(event) => {this.setState({searchText: event.target.value})}} type="text"/>
+                        <button onClick={() => this.search()}>search</button>
+                    </div>    
                 </div>
-                <div>
+                <div className="images_wrapper">
                     {this.state.array ? this.renderItems() : ""}
                 </div>
             </div>
