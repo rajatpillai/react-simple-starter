@@ -38,21 +38,21 @@ class Main extends Component {
                     <div>
                       <img src={img1} className="rajat-img" />
                       <h5 className="rajat-nameHeading"> Amit Pratap Singh </h5>
-                      <p> Web Developer </p>
+                      <p>IIT wale</p>
                     </div>
                   </div>
                   <div className="col-3 section1 mx-4 px-0">
                     <div>
                       <img src={img} className="rajat-img" />
                       <h5 className="rajat-nameHeading"> Rajat Pillai </h5>
-                      <p> Web Developer </p>
+                      <p> Car wale </p>
                     </div>
                   </div>
                   <div className="col-3 section1 px-0">
                     <div>
                       <img src={img2} className="rajat-img" />
                       <h5 className="rajat-nameHeading"> Bhuvan Mishra </h5>
-                      <p> Web Developer </p>
+                      <p> Sniper wale </p>
                     </div>
                   </div>
                 </div>

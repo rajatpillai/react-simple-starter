@@ -32,7 +32,8 @@ class ViewList extends Component {
     renderItems = () => {
        return this.state.array.map((item, index) => {
             console.log(item)
-            return (<img key={index} src={item} alt={item}  className="img-responsive" />);
+
+            return (<div class="col-sm-3 col-xs-6 image_wrapper_inner"><img key={index} src={item} alt={item}  className="img-responsive" /></div>);
         });
     }
 
@@ -45,7 +46,7 @@ class ViewList extends Component {
                         <button onClick={() => this.search()}>search</button>
                     </div>    
                 </div>
-                <div className="images_wrapper">
+                <div className="images_wrapper row">
                     {this.state.array ? this.renderItems() : ""}
                 </div>
             </div>
